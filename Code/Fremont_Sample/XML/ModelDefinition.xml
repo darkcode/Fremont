@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="ModelDefinition.xsd"
+ rootDataType="UDC"
+ rootXMLName="Company"
+ rootFormatString="">
+    
+	<ModelEnum enumName="CompensationTerm" xmlName="CompensationTerm">
+        <ModelEnumItem name="PERHOUR" value="0"/>
+        <ModelEnumItem name="PERMONTH" value="1"/>
+        <ModelEnumItem name="PERYEAR" value="2"/>
+    </ModelEnum>
+
+    <ModelClass className="Company" xmlName="Company" textPropertyName="description" textDataType="STRING" textFormatString="">
+		<ModelProperty propertyName="name" dataType="STRING" xmlType="ATTRIBUTE" xmlName="name" formatString=""/>
+        <ModelProperty propertyName="dateFounded" dataType="DATE" xmlType="ATTRIBUTE" xmlName="dateFounded" 
+			formatString="EEE MMM dd HH:mm:ss zzz yyyy"/>
+		<ModelProperty propertyName="location" dataType="STRING" xmlType="ELEMENT" xmlName="Location" formatString=""/>
+        <ModelProperty propertyName="computers" dataType="DICTIONARY" xmlType="ELEMENT" xmlName="Computers" formatString=""/>
+        <ModelProperty propertyName="employees" dataType="ARRAY" xmlType="ELEMENT" xmlName="Employees" formatString=""/>
+        <ModelProperty propertyName="logoImageData" dataType="DATA" xmlType="ELEMENT" xmlName="LogoImageData" formatString=""/>
+    </ModelClass>
+
+    <ModelClass className="Employee" xmlName="Employee" textPropertyName="" textDataType="" textFormatString="">
+        <ModelProperty propertyName="name" dataType="STRING" xmlType="ATTRIBUTE" xmlName="name" formatString=""/>
+        <ModelProperty propertyName="isActive" dataType="BOOLEAN" xmlType="ATTRIBUTE" xmlName="isActive" formatString=""/>
+        <ModelProperty propertyName="compensation" dataType="NUMBER" xmlType="ELEMENT" xmlName="Compensation" formatString=""/>
+        <ModelProperty propertyName="compensationTerm" dataType="ENUM" xmlType="ELEMENT" xmlName="CompensationTerm" formatString=""/>
+    </ModelClass>
+	
+	<ModelArray xmlName="Employees">
+        <ModelArrayElement dataType="UDC" xmlName="Employee" formatString=""/>
+	</ModelArray>
+
+	<ModelDictionary xmlName="Computers">
+        <ModelDictionaryElement key="Computer 1" dataType="STRING" xmlName="Computer1" formatString=""/>
+        <ModelDictionaryElement key="Computer 2" dataType="STRING" xmlName="Computer2" formatString=""/>
+        <ModelDictionaryElement key="Computer 3" dataType="STRING" xmlName="Computer3" formatString=""/>
+	</ModelDictionary>
+	
+</Model>

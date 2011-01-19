@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="Model">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelEnum"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelClass"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelArray"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelDictionary"/>
+      </xs:sequence>
+      <xs:attribute name="rootDataType" use="required" type="xs:string"/>
+      <xs:attribute name="rootXMLName" use="required" type="xs:string"/>
+      <xs:attribute name="rootFormatString" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelEnum">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="EnumItem"/>
+      </xs:sequence>
+      <xs:attribute name="enumName" use="required" type="xs:string"/>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelEnumItem">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" type="xs:string"/>
+      <xs:attribute name="value" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelClass">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelProperty"/>
+      </xs:sequence>
+      <xs:attribute name="className" use="required" type="xs:string"/>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+      <xs:attribute name="textDataType" use="required" type="xs:string"/>
+      <xs:attribute name="textPropertyName" use="required" type="xs:string"/>
+      <xs:attribute name="textFormatString" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelProperty">
+    <xs:complexType>
+      <xs:attribute name="propertyName" use="required" type="xs:string"/>
+      <xs:attribute name="dataType" use="required" type="xs:string"/>
+      <xs:attribute name="xmlType" use="required" type="xs:string"/>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+      <xs:attribute name="formatString" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelArray">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="1" maxOccurs="1" ref="ModelArrayElement"/>
+      </xs:sequence>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelArrayElement">
+    <xs:complexType>
+      <xs:attribute name="dataType" use="required" type="xs:string"/>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+      <xs:attribute name="formatString" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelDictionary">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ModelDictionaryElement"/>
+      </xs:sequence>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ModelDictionaryElement">
+    <xs:complexType>
+      <xs:attribute name="dataType" use="required" type="xs:string"/>
+      <xs:attribute name="xmlName" use="required" type="xs:string"/>
+      <xs:attribute name="key" use="required" type="xs:string"/>
+      <xs:attribute name="formatString" use="required" type="xs:string"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

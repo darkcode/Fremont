@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42CB928D123C59F600BD0044 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB928C123C59F600BD0044 /* CoreGraphics.framework */; };
+		42CB928F123C59F600BD0044 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB928E123C59F600BD0044 /* Foundation.framework */; };
+		42CB9291123C59F600BD0044 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42CB9290123C59F600BD0044 /* UIKit.framework */; };
+		42DFFF9911C19DFF0070D28B /* FMXMLConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7711C19DFF0070D28B /* FMXMLConstants.h */; };
+		42DFFF9A11C19DFF0070D28B /* FMXMLEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7811C19DFF0070D28B /* FMXMLEnums.h */; };
+		42DFFF9B11C19DFF0070D28B /* FMXMLError.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7911C19DFF0070D28B /* FMXMLError.h */; };
+		42DFFF9C11C19DFF0070D28B /* FMXMLError.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF7A11C19DFF0070D28B /* FMXMLError.m */; };
+		42DFFF9D11C19DFF0070D28B /* FMXMLModelManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7B11C19DFF0070D28B /* FMXMLModelManager.h */; };
+		42DFFF9E11C19DFF0070D28B /* FMXMLModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF7C11C19DFF0070D28B /* FMXMLModelManager.m */; };
+		42DFFF9F11C19DFF0070D28B /* FMXMLModelDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7D11C19DFF0070D28B /* FMXMLModelDefinition.h */; };
+		42DFFFA011C19DFF0070D28B /* FMXMLModelDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF7E11C19DFF0070D28B /* FMXMLModelDefinition.m */; };
+		42DFFFA111C19DFF0070D28B /* FMXMLModelRoot.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF7F11C19DFF0070D28B /* FMXMLModelRoot.h */; };
+		42DFFFA211C19DFF0070D28B /* FMXMLModelRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8011C19DFF0070D28B /* FMXMLModelRoot.m */; };
+		42DFFFA311C19DFF0070D28B /* FMXMLModelClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8111C19DFF0070D28B /* FMXMLModelClass.h */; };
+		42DFFFA411C19DFF0070D28B /* FMXMLModelClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8211C19DFF0070D28B /* FMXMLModelClass.m */; };
+		42DFFFA511C19DFF0070D28B /* FMXMLModelProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8311C19DFF0070D28B /* FMXMLModelProperty.h */; };
+		42DFFFA611C19DFF0070D28B /* FMXMLModelProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8411C19DFF0070D28B /* FMXMLModelProperty.m */; };
+		42DFFFA711C19DFF0070D28B /* FMXMLModelArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8511C19DFF0070D28B /* FMXMLModelArray.h */; };
+		42DFFFA811C19DFF0070D28B /* FMXMLModelArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8611C19DFF0070D28B /* FMXMLModelArray.m */; };
+		42DFFFA911C19DFF0070D28B /* FMXMLModelArrayElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8711C19DFF0070D28B /* FMXMLModelArrayElement.h */; };
+		42DFFFAA11C19DFF0070D28B /* FMXMLModelArrayElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8811C19DFF0070D28B /* FMXMLModelArrayElement.m */; };
+		42DFFFAB11C19DFF0070D28B /* FMXMLModelDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8911C19DFF0070D28B /* FMXMLModelDictionary.h */; };
+		42DFFFAC11C19DFF0070D28B /* FMXMLModelDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8A11C19DFF0070D28B /* FMXMLModelDictionary.m */; };
+		42DFFFAD11C19DFF0070D28B /* FMXMLModelDictionaryElement.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8B11C19DFF0070D28B /* FMXMLModelDictionaryElement.h */; };
+		42DFFFAE11C19DFF0070D28B /* FMXMLModelDictionaryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8C11C19DFF0070D28B /* FMXMLModelDictionaryElement.m */; };
+		42DFFFAF11C19DFF0070D28B /* FMXMLModelEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8D11C19DFF0070D28B /* FMXMLModelEnum.h */; };
+		42DFFFB011C19DFF0070D28B /* FMXMLModelEnum.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF8E11C19DFF0070D28B /* FMXMLModelEnum.m */; };
+		42DFFFB111C19DFF0070D28B /* FMXMLDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF8F11C19DFF0070D28B /* FMXMLDeserializer.h */; };
+		42DFFFB211C19DFF0070D28B /* FMXMLDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF9011C19DFF0070D28B /* FMXMLDeserializer.m */; };
+		42DFFFB311C19DFF0070D28B /* FMXMLSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF9111C19DFF0070D28B /* FMXMLSerializer.h */; };
+		42DFFFB411C19DFF0070D28B /* FMXMLSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF9211C19DFF0070D28B /* FMXMLSerializer.m */; };
+		42DFFFB511C19DFF0070D28B /* FMXMLDataTypeConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF9311C19DFF0070D28B /* FMXMLDataTypeConverter.h */; };
+		42DFFFB611C19DFF0070D28B /* FMXMLDataTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF9411C19DFF0070D28B /* FMXMLDataTypeConverter.m */; };
+		42DFFFB711C19DFF0070D28B /* FMXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF9511C19DFF0070D28B /* FMXMLNode.h */; };
+		42DFFFB811C19DFF0070D28B /* FMXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF9611C19DFF0070D28B /* FMXMLNode.m */; };
+		42DFFFB911C19DFF0070D28B /* FMXMLBase64Transcoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 42DFFF9711C19DFF0070D28B /* FMXMLBase64Transcoder.h */; };
+		42DFFFBA11C19DFF0070D28B /* FMXMLBase64Transcoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DFFF9811C19DFF0070D28B /* FMXMLBase64Transcoder.m */; };
+		AA747D9F0F9514B9006C5449 /* Fremont_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = AA747D9E0F9514B9006C5449 /* Fremont_Prefix.pch */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42CB928C123C59F600BD0044 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42CB928E123C59F600BD0044 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42CB9290123C59F600BD0044 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42DA17BD11C1A39700698C92 /* ModelDefinition.xsd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ModelDefinition.xsd; sourceTree = "<group>"; };
+		42DFFF7711C19DFF0070D28B /* FMXMLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLConstants.h; sourceTree = "<group>"; };
+		42DFFF7811C19DFF0070D28B /* FMXMLEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLEnums.h; sourceTree = "<group>"; };
+		42DFFF7911C19DFF0070D28B /* FMXMLError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLError.h; sourceTree = "<group>"; };
+		42DFFF7A11C19DFF0070D28B /* FMXMLError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLError.m; sourceTree = "<group>"; };
+		42DFFF7B11C19DFF0070D28B /* FMXMLModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelManager.h; sourceTree = "<group>"; };
+		42DFFF7C11C19DFF0070D28B /* FMXMLModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelManager.m; sourceTree = "<group>"; };
+		42DFFF7D11C19DFF0070D28B /* FMXMLModelDefinition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelDefinition.h; sourceTree = "<group>"; };
+		42DFFF7E11C19DFF0070D28B /* FMXMLModelDefinition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelDefinition.m; sourceTree = "<group>"; };
+		42DFFF7F11C19DFF0070D28B /* FMXMLModelRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelRoot.h; sourceTree = "<group>"; };
+		42DFFF8011C19DFF0070D28B /* FMXMLModelRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelRoot.m; sourceTree = "<group>"; };
+		42DFFF8111C19DFF0070D28B /* FMXMLModelClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelClass.h; sourceTree = "<group>"; };
+		42DFFF8211C19DFF0070D28B /* FMXMLModelClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelClass.m; sourceTree = "<group>"; };
+		42DFFF8311C19DFF0070D28B /* FMXMLModelProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelProperty.h; sourceTree = "<group>"; };
+		42DFFF8411C19DFF0070D28B /* FMXMLModelProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelProperty.m; sourceTree = "<group>"; };
+		42DFFF8511C19DFF0070D28B /* FMXMLModelArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelArray.h; sourceTree = "<group>"; };
+		42DFFF8611C19DFF0070D28B /* FMXMLModelArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelArray.m; sourceTree = "<group>"; };
+		42DFFF8711C19DFF0070D28B /* FMXMLModelArrayElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelArrayElement.h; sourceTree = "<group>"; };
+		42DFFF8811C19DFF0070D28B /* FMXMLModelArrayElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelArrayElement.m; sourceTree = "<group>"; };
+		42DFFF8911C19DFF0070D28B /* FMXMLModelDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelDictionary.h; sourceTree = "<group>"; };
+		42DFFF8A11C19DFF0070D28B /* FMXMLModelDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelDictionary.m; sourceTree = "<group>"; };
+		42DFFF8B11C19DFF0070D28B /* FMXMLModelDictionaryElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelDictionaryElement.h; sourceTree = "<group>"; };
+		42DFFF8C11C19DFF0070D28B /* FMXMLModelDictionaryElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelDictionaryElement.m; sourceTree = "<group>"; };
+		42DFFF8D11C19DFF0070D28B /* FMXMLModelEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLModelEnum.h; sourceTree = "<group>"; };
+		42DFFF8E11C19DFF0070D28B /* FMXMLModelEnum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLModelEnum.m; sourceTree = "<group>"; };
+		42DFFF8F11C19DFF0070D28B /* FMXMLDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLDeserializer.h; sourceTree = "<group>"; };
+		42DFFF9011C19DFF0070D28B /* FMXMLDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLDeserializer.m; sourceTree = "<group>"; };
+		42DFFF9111C19DFF0070D28B /* FMXMLSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLSerializer.h; sourceTree = "<group>"; };
+		42DFFF9211C19DFF0070D28B /* FMXMLSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLSerializer.m; sourceTree = "<group>"; };
+		42DFFF9311C19DFF0070D28B /* FMXMLDataTypeConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLDataTypeConverter.h; sourceTree = "<group>"; };
+		42DFFF9411C19DFF0070D28B /* FMXMLDataTypeConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLDataTypeConverter.m; sourceTree = "<group>"; };
+		42DFFF9511C19DFF0070D28B /* FMXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLNode.h; sourceTree = "<group>"; };
+		42DFFF9611C19DFF0070D28B /* FMXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLNode.m; sourceTree = "<group>"; };
+		42DFFF9711C19DFF0070D28B /* FMXMLBase64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMXMLBase64Transcoder.h; sourceTree = "<group>"; };
+		42DFFF9811C19DFF0070D28B /* FMXMLBase64Transcoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMXMLBase64Transcoder.m; sourceTree = "<group>"; };
+		AA747D9E0F9514B9006C5449 /* Fremont_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fremont_Prefix.pch; sourceTree = SOURCE_ROOT; };
+		D2AAC07E0554694100DB518D /* libFremont.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFremont.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC07C0554694100DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42CB928D123C59F600BD0044 /* CoreGraphics.framework in Frameworks */,
+				42CB928F123C59F600BD0044 /* Foundation.framework in Frameworks */,
+				42CB9291123C59F600BD0044 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC07E0554694100DB518D /* libFremont.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* Fremont */ = {
+			isa = PBXGroup;
+			children = (
+				42DA17BB11C1A39700698C92 /* Resources */,
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				0867D69AFE84028FC02AAC07 /* Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = Fremont;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42CB928C123C59F600BD0044 /* CoreGraphics.framework */,
+				42CB928E123C59F600BD0044 /* Foundation.framework */,
+				42CB9290123C59F600BD0044 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42DFFF7711C19DFF0070D28B /* FMXMLConstants.h */,
+				42DFFF7811C19DFF0070D28B /* FMXMLEnums.h */,
+				42DFFF7911C19DFF0070D28B /* FMXMLError.h */,
+				42DFFF7A11C19DFF0070D28B /* FMXMLError.m */,
+				42DFFF7B11C19DFF0070D28B /* FMXMLModelManager.h */,
+				42DFFF7C11C19DFF0070D28B /* FMXMLModelManager.m */,
+				42DFFF7D11C19DFF0070D28B /* FMXMLModelDefinition.h */,
+				42DFFF7E11C19DFF0070D28B /* FMXMLModelDefinition.m */,
+				42DFFF7F11C19DFF0070D28B /* FMXMLModelRoot.h */,
+				42DFFF8011C19DFF0070D28B /* FMXMLModelRoot.m */,
+				42DFFF8111C19DFF0070D28B /* FMXMLModelClass.h */,
+				42DFFF8211C19DFF0070D28B /* FMXMLModelClass.m */,
+				42DFFF8311C19DFF0070D28B /* FMXMLModelProperty.h */,
+				42DFFF8411C19DFF0070D28B /* FMXMLModelProperty.m */,
+				42DFFF8511C19DFF0070D28B /* FMXMLModelArray.h */,
+				42DFFF8611C19DFF0070D28B /* FMXMLModelArray.m */,
+				42DFFF8711C19DFF0070D28B /* FMXMLModelArrayElement.h */,
+				42DFFF8811C19DFF0070D28B /* FMXMLModelArrayElement.m */,
+				42DFFF8911C19DFF0070D28B /* FMXMLModelDictionary.h */,
+				42DFFF8A11C19DFF0070D28B /* FMXMLModelDictionary.m */,
+				42DFFF8B11C19DFF0070D28B /* FMXMLModelDictionaryElement.h */,
+				42DFFF8C11C19DFF0070D28B /* FMXMLModelDictionaryElement.m */,
+				42DFFF8D11C19DFF0070D28B /* FMXMLModelEnum.h */,
+				42DFFF8E11C19DFF0070D28B /* FMXMLModelEnum.m */,
+				42DFFF8F11C19DFF0070D28B /* FMXMLDeserializer.h */,
+				42DFFF9011C19DFF0070D28B /* FMXMLDeserializer.m */,
+				42DFFF9111C19DFF0070D28B /* FMXMLSerializer.h */,
+				42DFFF9211C19DFF0070D28B /* FMXMLSerializer.m */,
+				42DFFF9311C19DFF0070D28B /* FMXMLDataTypeConverter.h */,
+				42DFFF9411C19DFF0070D28B /* FMXMLDataTypeConverter.m */,
+				42DFFF9511C19DFF0070D28B /* FMXMLNode.h */,
+				42DFFF9611C19DFF0070D28B /* FMXMLNode.m */,
+				42DFFF9711C19DFF0070D28B /* FMXMLBase64Transcoder.h */,
+				42DFFF9811C19DFF0070D28B /* FMXMLBase64Transcoder.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AA747D9E0F9514B9006C5449 /* Fremont_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		42DA17BB11C1A39700698C92 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				42DA17BD11C1A39700698C92 /* ModelDefinition.xsd */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC07A0554694100DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA747D9F0F9514B9006C5449 /* Fremont_Prefix.pch in Headers */,
+				42DFFF9911C19DFF0070D28B /* FMXMLConstants.h in Headers */,
+				42DFFF9A11C19DFF0070D28B /* FMXMLEnums.h in Headers */,
+				42DFFF9B11C19DFF0070D28B /* FMXMLError.h in Headers */,
+				42DFFF9D11C19DFF0070D28B /* FMXMLModelManager.h in Headers */,
+				42DFFF9F11C19DFF0070D28B /* FMXMLModelDefinition.h in Headers */,
+				42DFFFA111C19DFF0070D28B /* FMXMLModelRoot.h in Headers */,
+				42DFFFA311C19DFF0070D28B /* FMXMLModelClass.h in Headers */,
+				42DFFFA511C19DFF0070D28B /* FMXMLModelProperty.h in Headers */,
+				42DFFFA711C19DFF0070D28B /* FMXMLModelArray.h in Headers */,
+				42DFFFA911C19DFF0070D28B /* FMXMLModelArrayElement.h in Headers */,
+				42DFFFAB11C19DFF0070D28B /* FMXMLModelDictionary.h in Headers */,
+				42DFFFAD11C19DFF0070D28B /* FMXMLModelDictionaryElement.h in Headers */,
+				42DFFFAF11C19DFF0070D28B /* FMXMLModelEnum.h in Headers */,
+				42DFFFB111C19DFF0070D28B /* FMXMLDeserializer.h in Headers */,
+				42DFFFB311C19DFF0070D28B /* FMXMLSerializer.h in Headers */,
+				42DFFFB511C19DFF0070D28B /* FMXMLDataTypeConverter.h in Headers */,
+				42DFFFB711C19DFF0070D28B /* FMXMLNode.h in Headers */,
+				42DFFFB911C19DFF0070D28B /* FMXMLBase64Transcoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC07D0554694100DB518D /* Fremont */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Fremont" */;
+			buildPhases = (
+				D2AAC07A0554694100DB518D /* Headers */,
+				D2AAC07B0554694100DB518D /* Sources */,
+				D2AAC07C0554694100DB518D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Fremont;
+			productName = Fremont;
+			productReference = D2AAC07E0554694100DB518D /* libFremont.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Fremont" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 0867D691FE84028FC02AAC07 /* Fremont */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC07D0554694100DB518D /* Fremont */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC07B0554694100DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DFFF9C11C19DFF0070D28B /* FMXMLError.m in Sources */,
+				42DFFF9E11C19DFF0070D28B /* FMXMLModelManager.m in Sources */,
+				42DFFFA011C19DFF0070D28B /* FMXMLModelDefinition.m in Sources */,
+				42DFFFA211C19DFF0070D28B /* FMXMLModelRoot.m in Sources */,
+				42DFFFA411C19DFF0070D28B /* FMXMLModelClass.m in Sources */,
+				42DFFFA611C19DFF0070D28B /* FMXMLModelProperty.m in Sources */,
+				42DFFFA811C19DFF0070D28B /* FMXMLModelArray.m in Sources */,
+				42DFFFAA11C19DFF0070D28B /* FMXMLModelArrayElement.m in Sources */,
+				42DFFFAC11C19DFF0070D28B /* FMXMLModelDictionary.m in Sources */,
+				42DFFFAE11C19DFF0070D28B /* FMXMLModelDictionaryElement.m in Sources */,
+				42DFFFB011C19DFF0070D28B /* FMXMLModelEnum.m in Sources */,
+				42DFFFB211C19DFF0070D28B /* FMXMLDeserializer.m in Sources */,
+				42DFFFB411C19DFF0070D28B /* FMXMLSerializer.m in Sources */,
+				42DFFFB611C19DFF0070D28B /* FMXMLDataTypeConverter.m in Sources */,
+				42DFFFB811C19DFF0070D28B /* FMXMLNode.m in Sources */,
+				42DFFFBA11C19DFF0070D28B /* FMXMLBase64Transcoder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB921F08733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/Fremont.dst;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fremont_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Fremont;
+			};
+			name = Debug;
+		};
+		1DEB922008733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Fremont.dst;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Fremont_Prefix.pch;
+				INSTALL_PATH = /usr/local/lib;
+				PRODUCT_NAME = Fremont;
+			};
+			name = Release;
+		};
+		1DEB922308733DC00010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1DEB922408733DC00010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
+				OTHER_LDFLAGS = "-ObjC";
+				PREBINDING = NO;
+				SDKROOT = iphoneos4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB921E08733DC00010E9CD /* Build configuration list for PBXNativeTarget "Fremont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB921F08733DC00010E9CD /* Debug */,
+				1DEB922008733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "Fremont" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB922308733DC00010E9CD /* Debug */,
+				1DEB922408733DC00010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
