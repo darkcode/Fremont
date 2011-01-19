@@ -2,7 +2,7 @@
 
 ***
 
-**Fremont XML Library, developed by Big Hill Software LLC, Copyright (c) 2010 Big Hill Software LLC.**
+*Fremont XML Library, developed by Big Hill Software LLC, Copyright (c) 2010 Big Hill Software LLC.*
 
 ***
 
