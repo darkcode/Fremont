@@ -1,6 +1,9 @@
 #LICENSE
 
+---
 *Fremont XML Library, developed by Big Hill Software LLC.*
+
+---
 
 ##PERMISSIONS
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software, specifically granting the rights to do the following: 
@@ -25,6 +28,8 @@ These terms are subject to the following conditions:
 * Users of Fremont must notify Big Hill Software of the app in which Fremont is used. Big Hill Software reserves the right to publicize use of Fremont in this app. (Hey, this may drive potential customers to your app!)
 * Use of Fremont in any application, such as an iPhone/iPod Touch/iPad (iOS) app, or desktop application, shall require the following visible attribution in the UI of the application:
 
+---
 **THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
 
+---
 **Fremont XML Library, Copyright (c) 2010 Big Hill Software LLC.**
