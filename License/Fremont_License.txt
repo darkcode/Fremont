@@ -1,3 +1,6 @@
+LICENSE
+=======
+
 Fremont XML Library, Copyright (c) 2010 Big Hill Software LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software, specifically granting the rights to do the following: 
