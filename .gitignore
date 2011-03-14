@@ -6,6 +6,8 @@ build/*
 *.perspectivev3
 *.xcodeproj/*
 !*.xcodeproj/project.pbxproj
+*.xcworkspace/ 
+xcuserdata/
 
 # old skool
 .svn
