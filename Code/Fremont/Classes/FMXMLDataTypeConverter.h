@@ -18,7 +18,7 @@
 + (NSString *)numberIdToString:(id)object;
 + (NSString *)dateIdToString:(id)object withFormat:(NSString *)formatString;
 + (NSString *)booleanIdToString:(id)object;
-+ (NSString *)dataIdToString:(id)object;
++ (NSString *)dataIdToString:(id)object;		
 + (NSString *)enumIdToString:(id)object;
 
 + (NSString *)numberToString:(NSNumber *)value;
