@@ -50,7 +50,7 @@
 	NSDictionary *userInfo = [NSDictionary dictionaryWithObjects:objArray
 													  forKeys:keyArray];
 
-	return [[[NSError alloc] initWithDomain:EDM_FREMONT
+	return [[[FMXMLError alloc] initWithDomain:EDM_FREMONT
 									   code:code
 								   userInfo:userInfo] autorelease];	
 }

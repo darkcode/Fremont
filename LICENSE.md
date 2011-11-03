@@ -27,7 +27,7 @@ These terms are subject to the following conditions:
 
 * This license notice in its entirety shall be included in all copies or substantial portions of the Software.
 * Users of Fremont must notify Big Hill Software of the app in which Fremont is used. Big Hill Software reserves the right to publicize use of Fremont in this app. (Hey, this may drive potential customers to your app!)
-* Use of Fremont in any application, such as an iPhone/iPod Touch/iPad (iOS) app, or desktop application, shall require the following visible attribution in the UI of the application:
+* Use of Fremont in any application, such as an iPhone/iPod Touch/iPad (iOS) app, or desktop application, shall require the following visible attribution in the UI of the application: "Fremont XML Library, developed by Big Hill Software LLC."
 
 ***
 
