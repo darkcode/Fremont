@@ -48,7 +48,7 @@
 		case NSUTF32StringEncoding:
 			return @"UTF-32";
 		default:
-			[NSException raise:@"Unsupported string encoding" format:@"The following string encoding is not supported: %d", encoding];
+			[NSException raise:@"Unsupported string encoding" format:@"The following string encoding is not supported: %lu", (unsigned long)encoding];
 	}	
 	
 	return nil;
