@@ -462,9 +462,19 @@
 
 - (void)parser:(NSXMLParser *)parser foundCDATA:(NSData *)CDATABlock;
 {
-	NSString *base64String = [[NSString alloc] initWithData:CDATABlock encoding:NSUTF8StringEncoding];
-	currentNode.data = [FMXMLDataTypeConverter stringToData:base64String];
-	[base64String release];
+    FMXMLDataType dataType = currentNode.dataType;
+    
+    if ( dataType == STRING ) {
+        NSString *cdataString = [[NSString alloc] initWithData:CDATABlock encoding:NSUTF8StringEncoding];
+        currentNode.characters = cdataString;
+        [cdataString release];
+        
+    } else {
+        
+        NSString *base64String = [[NSString alloc] initWithData:CDATABlock encoding:NSUTF8StringEncoding];
+        currentNode.data = [FMXMLDataTypeConverter stringToData:base64String];
+        [base64String release];
+    }
 }
 
 - (void)dealloc {
