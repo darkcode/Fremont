@@ -83,12 +83,26 @@
 
 + (NSDate *)stringToDate:(NSString *)value withFormat:(NSString *)formatString;
 {
-	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-	[dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
-	[dateFormatter setDateFormat:formatString];
-	NSDate *date = [dateFormatter dateFromString:value];
-	[dateFormatter release];	
-	return date;
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setFormatterBehavior:NSDateFormatterBehavior10_4];
+    [dateFormatter setDateFormat:formatString];
+    [dateFormatter setDefaultDate:[self someDateWithNoonWithTimeZone:dateFormatter.timeZone]];
+    NSDate *date = [dateFormatter dateFromString:value];
+    [dateFormatter release];
+    return date;
+}
+
++ (NSDate *)someDateWithNoonWithTimeZone:(NSTimeZone *)timeZone {
+    NSDateComponents *components = [[NSDateComponents alloc] init];
+    components.timeZone = timeZone;
+    components.era = 1;
+    components.year = 2001;
+    components.month = 1;
+    components.day = 1;
+    components.hour = 12;
+    components.minute = 0;
+    components.second = 0;
+    return [[NSCalendar autoupdatingCurrentCalendar] dateFromComponents:components];
 }
 
 + (BOOL)stringToBoolean:(NSString *)value;
